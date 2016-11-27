@@ -10,8 +10,7 @@ There isn't really any installation, but you need to have Docker installed.  Con
 The first run will pull the container image down to your local machine.
 
 ``` bash
-sudo docker run -d --restart=always --net="host" --name="airsonos" \
-  -p 5000-5050:5000-5050/tcp justintime/airsonos
+sudo docker run -d --restart=always --net="host" --name="AirSonos" -p 5000-5050:5000-5050/tcp townk/airsonos
 ```
 
 ## Notes on running the container
