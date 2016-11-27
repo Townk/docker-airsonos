@@ -26,3 +26,7 @@ cd /var/tmp/
 git clone https://github.com/stephen/airsonos.git
 cd airsonos
 npm install -g --unsafe-perm
+
+LIBS_DIR="`npm list -g | head -n 1`"
+
+curl -sL https://raw.githubusercontent.com/Townk/docker-airsonos/master/logicalDevice.js > $LIBS_DIR/node_modules/sonos/lib/logicalDevice.js
